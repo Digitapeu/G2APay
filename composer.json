@@ -1,5 +1,5 @@
 {
-	"name": "frontlabs/g2apay",
+	"name": "digitapeu/g2apay",
 	"description": "G2APay PHP library for creating and sending payments.",
 	"type": "library",
 	"license": "MIT",
@@ -7,6 +7,10 @@
 		{
 			"name": "Frontlabs",
 			"email": "info@frontlabs.co"
+		},
+		{
+			"name": "Digitap",
+			"email": "support@digitap.eu"
 		}
 	],
 	"minimum-stability": "dev",
