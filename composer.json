@@ -1,5 +1,5 @@
 {
-	"name": "digitapeu/g2apay",
+	"name": "digitapeu/g2a",
 	"description": "G2A Pay PHP library for creating and sending payments.",
 	"type": "library",
 	"license": "MIT",
