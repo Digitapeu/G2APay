@@ -88,13 +88,17 @@ class G2APay
 			'amount'		=> $amount,
 			'currency'		=> $this->currency,
 			// 'description' => '',
-			// 'email'		 => '',
+			'email'		    => $this->apiEmail,
 			'url_failure'	=> $this->urlFail,
 			'url_ok'		=> $this->urlSuccess,
-			// 'cart_type'	 => '' // 'physical' or 'digital'
-			'items'			=> $this->items,
+			'cart_type'	    => 'digital', // 'physical' or 'digital'
+			'items'			=> $this->items
 			// 'addresses'	 => [],
 		], $extra);
+
+		$headers = [
+			'Authorization: '. $this->apiHash.';'.$this->calculateAuthHash(),
+		];
 
 		// Request API server
 		$ch = curl_init();
@@ -104,6 +108,7 @@ class G2APay
 		curl_setopt($ch, CURLOPT_POST, true);
 		curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($fields));
 		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, true);
+		curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 
 		$response = curl_exec($ch);
 		curl_close($ch);

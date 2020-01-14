@@ -1,6 +1,6 @@
 {
 	"name": "digitapeu/g2apay",
-	"description": "G2APay PHP library for creating and sending payments.",
+	"description": "G2A Pay PHP library for creating and sending payments.",
 	"type": "library",
 	"license": "MIT",
 	"authors": [
