@@ -6,7 +6,7 @@ Create and send payments using G2APay payment gateway.
 
 ### Installation
 
-Run `composer require frontlabs/g2apay` to install through **Composer**.
+Run `composer require digitapeu/g2apay` to install through **Composer**.
 
 ### Usage
 
